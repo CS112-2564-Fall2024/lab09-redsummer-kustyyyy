@@ -115,7 +115,7 @@
                         <Label fx:id="descriptionLabel" alignment="CENTER" layoutX="-1.0" layoutY="80.0" prefHeight="193.0" prefWidth="443.0" text="Description" wrapText="true" />
                         <Pane layoutX="1.0" layoutY="235.0" prefHeight="200.0" prefWidth="443.0">
                            <children>
-                              <ImageView id="imageLabel" fitHeight="211.0" fitWidth="432.0" layoutX="6.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="imageLabel" fitHeight="211.0" fitWidth="432.0" layoutX="55.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
                            </children>
                         </Pane>
                         <HBox alignment="CENTER" layoutX="121.0" layoutY="435.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">

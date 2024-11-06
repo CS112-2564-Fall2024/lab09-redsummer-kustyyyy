@@ -25,12 +25,12 @@ public class MainController {
     @FXML
     ImageView imageLabel;
 
-    public void initialize(){
+    public void initialize() {
         titleLabel.setText(MAIN_TITLE);
         subTitleLabel.setText(MAIN_SUBTITLE);
         descriptionLabel.setText(MAIN_DESCRIPTION);
-//        Image image = new Image(REDSUMMER_IMAGE_PATH);
-//       imageLabel.setImage(image);
+       Image image = new Image(REDSUMMER_IMAGE_PATH);
+      imageLabel.setImage(image);
     }
 
     public void handleStartButton() throws IOException {
