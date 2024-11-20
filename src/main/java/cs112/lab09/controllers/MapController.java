@@ -30,6 +30,7 @@ public class MapController {
     }
     public void handleCityState() throws IOException {
         handleShowModal(Event.SAN_FRANCISCO);
+
     }
     public void handleOtherCityState() throws IOException {
         handleShowModal(Event.BISBEE);
