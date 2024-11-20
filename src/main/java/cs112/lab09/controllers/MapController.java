@@ -5,6 +5,7 @@ import cs112.lab09.Constants;
 import cs112.lab09.RedSummer;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -28,22 +29,23 @@ public class MapController {
         imageView.setImage(image);
     }
     public void handleCityState() throws IOException {
-        handleOpenPopup(Event.SAN_FRANCISCO);
+        handleShowModal(Event.SAN_FRANCISCO);
     }
     public void handleOtherCityState() throws IOException {
-        handleOpenPopup(Event.BISBEE);
+        handleShowModal(Event.BISBEE);
     }
 
-    public void handleOpenPopup(Constants.Event eventIndex) throws IOException{
+    public void handleShowModal(Constants.Event eventIndex) throws IOException {
         Stage stage = new Stage();
         stage.initModality(Modality.APPLICATION_MODAL);
-
         FXMLLoader fxmlLoader = new FXMLLoader(RedSummer.class.getResource(CITY_VIEW_RESOURCE));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setScene(scene);
         stage.setTitle(CITY_VIEW_TITLE);
+
         CityController cityController = fxmlLoader.getController();
         cityController.initData(eventIndex);
+
         stage.show();
     }
 }
