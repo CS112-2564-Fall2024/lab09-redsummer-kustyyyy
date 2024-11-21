@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.CityController">
    <children>
       <SplitPane dividerPositions="0.4903677758318739" prefHeight="586.0" prefWidth="573.0">
         <items>
@@ -75,6 +75,6 @@
             </AnchorPane>
         </items>
       </SplitPane>
-      <Button layoutX="261.0" layoutY="603.0" mnemonicParsing="false" onAction="#handleCloseButton" text="Close" />
+      <Button layoutX="261.0" layoutY="603.0" mnemonicParsing="false" onAction="#handleCloseButton" text="Close"></Button>
    </children>
 </Pane>

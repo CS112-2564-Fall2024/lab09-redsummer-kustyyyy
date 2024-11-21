@@ -21,10 +21,13 @@ public class CityController {
     Label dateLabel;
 
     @FXML
+    Label descriptionLabel;
+
+    @FXML
     Label revisedDescriptionLabel;
 
     @FXML
-    Hyperlink hyplinkreference;
+    Hyperlink hyplinkReference;
 
     public void handleCloseButton() {
 Stage stage = (Stage) imageView.getScene().getWindow();
@@ -38,8 +41,9 @@ stage.close();
         imageView.setImage(event.getImage());
         locationLabel.setText(event.getLocation());
         dateLabel.setText(event.getEventDay().toString());
-        revisedDescriptionLabel.setText(event.getDescription());
-        hyplinkreference.setText(event.getCitation());
+        descriptionLabel.setText(event.getDescription());
+        revisedDescriptionLabel.setText(event.getRevisedDescription());
+        hyplinkReference.setText(event.getCitation());
 
     }
 }
